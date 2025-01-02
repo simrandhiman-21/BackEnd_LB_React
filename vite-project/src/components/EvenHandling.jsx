@@ -19,10 +19,30 @@ const EvenHandling = () => {
         </form>
 
         {/* //To retain form data even after reloading the page, you can use localStorage or sessionStorage. */}
+    <br />
 
-      
+    {/* immidately envoked functions  */}
+      {/* <button onClick={alert("Button clicked already")}>Button </button> */}
+      {/* avoid  */}
+      <button onClick={()=>alert("now button is clicked ")}>Button</button>
 
 
+{/*  react  */}
+  {/* <script>
+    <button id="myButton">Click Me</button>
+    
+    const button = document.getElementById('myButton');
+    
+    // Option 1: Using the onclick property
+    button.onclick = function () {
+      alert('Button clicked!');
+    };
+
+    // Option 2: Using addEventListener
+    button.addEventListener('click', function () {
+      console.log('Button clicked with addEventListener!');
+    }); */}
+ 
 
     </div>
   )

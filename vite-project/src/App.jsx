@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UserCards from './components/userCards'
 import LoggedIn from './components/loggedIn';
 import LoggedOut from './components/LoggedOut';
 import EvenHandling from './components/EvenHandling';
+import LoggerComp from './components/LoggerComp';
+import TimerComp from './components/TimerComp';
+import ResizerComp from './components/ResizerComp';
+import DataFecherComp from './components/DataFecherComp';
+import MutliEffectComp from './components/MutliEffectComp';
+
 
 const App = () => {
 
-  const[islogedin,setisloggedin]=useState(true);
+  //const[islogedin,setisloggedin]=useState(true);
   
   // return (
   //   <>
@@ -55,13 +61,24 @@ const App = () => {
     //   <div>{islogedin && <LoggedOut/>}</div>
     // )
 
+    // return(
+    //   <>
+    //     <EvenHandling/>      
+    //   </>
+    // )
+
     return(
-      <>
-        <EvenHandling/>
-      </>
-    )
+          //Hooks UseEffect 4 files
+          <>
+          {/* <LoggerComp/> */}
+          {/* unmount interval */}
+          {/* <TimerComp/>   */}
 
+        {/* <DataFecherComp/> */}
+        {/* <ResizerComp/>    */}
+        <MutliEffectComp/>         
 
+          </> 
+    )   
 }
-
 export default App
